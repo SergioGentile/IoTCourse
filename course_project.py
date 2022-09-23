@@ -53,7 +53,7 @@ def main():
     print(f"Your serial number: {SERIAL_NUMBER}")
 
     topic_env = f'IoTCourseData/{SERIAL_NUMBER}/Environment'
-    topic_motion = f'IoTCourseData/{SERIAL_NUMBER}/Environment'
+    topic_motion = f'IoTCourseData/{SERIAL_NUMBER}/Motion'
 
     while not grace_killer.is_killed():
         mqtt_client.publish(topic_env, json.dumps(env_data))
