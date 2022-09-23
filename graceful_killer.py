@@ -1,5 +1,8 @@
 import signal
 
+"""
+    To exit gracefully with CTRL+C
+"""
 
 class GracefulKiller:
     def __init__(self):
@@ -9,7 +12,9 @@ class GracefulKiller:
 
     def exit_gracefully(self, *args):
         self.__kill_now__ = True
-        print("EXITING GRACEFULLY!!!!!!!!!!!!!!!!!!!")
+        print("\n\n*************************************")
+        print("**** Application closed correctly ***")
+        print("*************************************\n\n")
 
     def is_killed(self):
         return self.__kill_now__

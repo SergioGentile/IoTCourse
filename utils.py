@@ -1,3 +1,7 @@
+"""
+    To extract the code from the cpu
+"""
+
 def getserial():
     # Extract serial from cpuinfo file
     cpuserial = "0000000000000000"

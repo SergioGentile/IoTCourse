@@ -1,6 +1,9 @@
 from paho.mqtt import client as mqtt_client
 import time
 
+"""
+    To Handle mqtt connection
+"""
 
 class mqtt_handler:
 
